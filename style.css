@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Fugaz+One&family=Poppins:wght@200;300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins';
+}
+
+content-box{
+    position: relative;
+
+}
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: 1;
+}
+
+overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #0346974a;
+    z-index: 2;
+
+}
+nav{
+    position: absolute;
+    top: 0;
+    left: 20%;
+    width: 80%;
+    height: 100px;
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    transform: translate(-10%,0);
+    padding-top: 25px;
+    
+
+}
+
+hr{
+    position: absolute;
+    top: 100px;
+    left: 0%;
+    width: 100%;
+    height: 1px;
+    border: none;
+    background: #181818;
+    z-index: 4;
+
+
+}
+nav h1{
+    font-size: 45px ;
+    font-family: 'aclonica';
+    color:#fff;
+    letter-spacing: 3;
+    font-weight: 200;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+nav ul li a{
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.content{
+    position: absolute;
+    top: 200px;
+    left: 165px;
+    width: 60%;
+    height: 100%;
+    z-index: 5;
+}
+.content h1, .content h1 span{
+    font-family: 'fugaz one';
+    font-size: 60px;
+    line-height: 1.2;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #fff;
+}
+.content p{
+    font-size: 17px;
+    line-height: 1.3;
+    color:#fff;
+    margin: 20px 0;
+    width: 90%;
+}
+
+.subscription form .email{
+    padding: 12px 20px;
+    width: 50%;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    background: #fff;
+
+
+}
+
+.subscription form .submit{
+    margin-left: -105px;
+    padding: 7px 15px;
+    border: none;
+    border-radius: 50px;
+    background: blue;
+    color: #fff;
+    cursor: pointer;
+}
+.content h1 span{
+    position: relative;
+    display: inline-block;
+    animation: dancing 1s infinite;
+    animation-delay: calc(.1s * var(--i));
+}
+
+@keyframes dancing {
+    0%, 40%, 100%{
+        transform: translateY(0);
+    }
+    20%{
+        transform: translateY(20%);
+    }
+    
+}
